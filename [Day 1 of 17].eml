@@ -1,0 +1,601 @@
+Return-Path: <bounces+2693180-c087-adrianhunold=gmx.de@m.dripemail2.com>
+Received: from o18.sg.m.dripemail2.com ([168.245.65.178]) by mx-ha.gmx.net
+ (mxgmx014 [212.227.15.9]) with ESMTPS (Nemesis) id 1MTyKW-1gXwQn2T8E-00R3AV
+ for <adrianhunold@gmx.de>; Wed, 27 Feb 2019 10:26:24 +0100
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=dripemail2.com; 
+	h=content-type:from:mime-version:reply-to:to:subject; s=s1; 
+	bh=YzNS3943bX4cMZXYwdyaSe1NiN8=; b=JxIs/QGXQkvBtc0r81FD4O/49V748
+	7whg0wvEIYThPYQw+916Nwwl9YQA8KvozkEx8dwOxC+2g61w4gO1omfpTTKIxdjl
+	Ll0/9cfrmQxk7l7TS6vLV+twoKEC+En4PKa++WGQ79bimiwa/VrYCKSLSpQk2yKE
+	Ok/5/uC520srpg=
+Received: by filter0557p1iad2.sendgrid.net with SMTP id filter0557p1iad2-20925-5C7657BD-18
+        2019-02-27 09:26:21.687596267 +0000 UTC m=+461078.452485966
+Received: from MjY5MzE4MA (ec2-34-234-122-126.compute-1.amazonaws.com [34.234.122.126])
+	by ismtpd0001p1iad1.sendgrid.net (SG) with HTTP id QcTsCAP7RgO9pBnbG4IkLg
+	Wed, 27 Feb 2019 09:26:21.430 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=98750950a68488876c2dc4245916c4d44f3f6bcb2f108670085eb7ba48e9
+Date: Wed, 27 Feb 2019 09:26:21 +0000 (UTC)
+From: "Adrian at PyImageSearch" <adrian@pyimagesearch.com>
+Mime-Version: 1.0
+Reply-to: reply-jfisnkzpjzo9f3esopvq@in2.getdrip.com
+To: adrianhunold@gmx.de
+Message-ID: <QcTsCAP7RgO9pBnbG4IkLg@ismtpd0001p1iad1.sendgrid.net>
+Subject: You're IN the computer vision and deep learning crash course! [Day 1 of 17]
+X-Drip-SendingAccount: 4768429
+X-SG-EID: VW4gZPfESYY5Fq4McLsYNxSJSBgM4lToLKpjJ8URU6rtLLzg0RKeKquM5HSkBczjfqk5ALqEV0OX3g
+ dq6fccVEQkh1JxmYMDYl9HK8f6UkVID7W+6ExfYm/bx4KAEWvLxNkKP7F7Qbt0tXLMtcWsrIfbqJxb
+ cuNDlGEbCa72Piim1ADNb8n/SvEUs3a2IxcPD54R3P4PrICxNmrGL60c9Gge+Jl/l02AOm+ruL9W96
+ mboAgBrbIpYEPYkJVo220L
+X-SG-ID: 6l1ICXxVk1U2NQBE+KPgx8bJyK87wuq8OZvYKu6Z/xLXF++KQ7wZv6TGk7LD96zOStPtax1rTRPtFw
+ OVc7phxPteqaWG/elS7uzn2jSaQFOMKjYywnqqoggztZLu4wcZgQuS9w7scpwoFwgyKwYGD2DxWKxB
+ zIP3QfNy0RZ2T0Ywe+OZZ889lxQr6S6IZtqL0BpEKkDRxA4Z0yTEqyEZTOnbPeI4BMW2MGB9tUONzt
+ zXgdrTMBL2oiWGDxrWcH5KRQP/xNETAADyjqFUGJLRn8MgcblOj79dFgtCXx/qPbc=
+Envelope-To: <adrianhunold@gmx.de>
+X-GMX-Antispam: 0 (Mail was not recognized as spam); Detail=V3;
+X-Spam-Flag: NO
+X-UI-Filterresults: notjunk:1;V03:K0:veXrFtJ/P70=:QaWwew70cto85GK9FYgB4+1udb
+ 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
+ w==
+
+--98750950a68488876c2dc4245916c4d44f3f6bcb2f108670085eb7ba48e9
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+Hi,
+
+Welcome to the 17-day computer vision and deep learning crash
+course. Catchy name, right?
+
+Seriously, thank you for signing up =E2=80=94 you=E2=80=99ve taken the firs=
+t step
+towards mastering computer vision, OpenCV, and deep learning,
+which is fantastic.
+
+As you might have already determined =E2=80=94 you strike me as a pretty
+smart person =E2=80=94 this crash course is 17 days long. Each day for 17
+days (Monday-Friday), you=E2=80=99ll receive an email with a new lesson
+based on the tutorials I=E2=80=99ve written on my blog, PyImageSearch,
+over the last 5 years.
+
+This course organizes those tutorials into a cohesive program
+designed to get you working in computer vision and deep learning
+FAST.
+
+You=E2=80=99ll learn a lot over the next 2.5 weeks, and you=E2=80=99re also=
+ going
+to get your hands dirty, digging into the code and building real
+computer vision projects. The thing is, computer vision and deep
+learning are a lot of fun =E2=80=94 when you approach them the right way.
+
+In other words, this course is not about hours of monotonous
+study or doing boring, tedious homework. It=E2=80=99s about getting
+hands-on with CV and DL and using them to solve real-world
+problems. You get a practical education and you get to have fun
+along the way.
+
+As proof of this, today, you=E2=80=99ll get a close-up look at the
+"hidden" deep learning-based face detector ( http://t.dripemail2.com/c/eyJh=
+Y2NvdW50X2lkIjoiNDc2ODQyOSIsImRlbGl2ZXJ5X2lkIjoiNTYwNDI4MDM3NyIsInVybCI6Imh=
+0dHBzOi8vd3d3LnB5aW1hZ2VzZWFyY2guY29tLzIwMTgvMDIvMjYvZmFjZS1kZXRlY3Rpb24td2=
+l0aC1vcGVuY3YtYW5kLWRlZXAtbGVhcm5pbmcvP19fcz1rMXRmaTV4Y3huY3Jwc3Bwa2VvcCJ9 =
+) that most people don't know is built right into OpenCV:
+
+Image ( http://t.dripemail2.com/c/eyJhY2NvdW50X2lkIjoiNDc2ODQyOSIsImRlbGl2Z=
+XJ5X2lkIjoiNTYwNDI4MDM3NyIsInVybCI6Imh0dHBzOi8vd3d3LnB5aW1hZ2VzZWFyY2guY29t=
+LzIwMTgvMDIvMjYvZmFjZS1kZXRlY3Rpb24td2l0aC1vcGVuY3YtYW5kLWRlZXAtbGVhcm5pbmc=
+vP19fcz1rMXRmaTV4Y3huY3Jwc3Bwa2VvcCJ9 )
+
+We=E2=80=99re starting here for a few reasons:
+
+* Come on. Discovering hidden stuff is just plain COOL. You=E2=80=99re
+going to know something that a lot of CV/DL practitioners don=E2=80=99t,
+which is fun.
+* You can use face detection in images and video, which makes it
+seriously useful.
+* The hidden face detector is a pre-trained model that=E2=80=99s shipped
+with the OpenCV library, so you can dig in even if you don=E2=80=99t know
+a lot about OpenCV yet.
+
+To learn more about where you can find this little-known feature
+of OpenCV and see exactly how to set it up and use it for highly
+accurate face detection =E2=80=94 even in low light and poor resolution
+conditions =E2=80=94 head on over to today=E2=80=99s lesson. ( http://t.dri=
+pemail2.com/c/eyJhY2NvdW50X2lkIjoiNDc2ODQyOSIsImRlbGl2ZXJ5X2lkIjoiNTYwNDI4M=
+DM3NyIsInVybCI6Imh0dHBzOi8vd3d3LnB5aW1hZ2VzZWFyY2guY29tLzIwMTgvMDIvMjYvZmFj=
+ZS1kZXRlY3Rpb24td2l0aC1vcGVuY3YtYW5kLWRlZXAtbGVhcm5pbmcvP19fcz1rMXRmaTV4Y3h=
+uY3Jwc3Bwa2VvcCJ9 )
+
+Most lessons will take you about 10-20 minutes to complete =E2=80=94 and
+they=E2=80=99re all designed to give you the practical skills you need to
+use a particular computer vision or deep learning technique with
+confidence. This can translate directly into better job
+opportunities, higher salaries, and exciting opportunities to
+develop all kinds of amazing tools.
+
+By setting aside the 10-20 minutes to complete each day=E2=80=99s lesson,
+you=E2=80=99re truly investing in your future.
+
+Remember the first time you thought about getting into computer
+programming? I bet it wasn't because someone showed you a
+screenful of code...
+
+Instead, your motivation was likely more practical, real-world,
+and tangible.
+
+Maybe you wanted to understand how websites were created so you
+could build your own. Perhaps you read an article about the
+creator of the Flappy Bird game was making $50,000/day off his
+app and you wanted to do the same. Or maybe you started coding
+because you saw how computer vision is helping medical
+professionals diagnose health problems earlier than ever =E2=80=94 or
+something else entirely, that made you want to be a part of that
+world.
+
+That=E2=80=99s what this crash course is for. To help you get back the
+excitement that goes along with learning new skills and using
+those skills to create real-world solutions.
+
+I=E2=80=99m excited that you=E2=80=99re here. Let=E2=80=99s get started! ( =
+http://t.dripemail2.com/c/eyJhY2NvdW50X2lkIjoiNDc2ODQyOSIsImRlbGl2ZXJ5X2lkI=
+joiNTYwNDI4MDM3NyIsInVybCI6Imh0dHBzOi8vd3d3LnB5aW1hZ2VzZWFyY2guY29tLzIwMTgv=
+MDIvMjYvZmFjZS1kZXRlY3Rpb24td2l0aC1vcGVuY3YtYW5kLWRlZXAtbGVhcm5pbmcvP19fcz1=
+rMXRmaTV4Y3huY3Jwc3Bwa2VvcCJ9 )
+
+I'll be back tomorrow with the second lesson in the crash course.
+
+Adrian Rosebrock
+
+Chief PyImageSearcher
+
+P.S. I=E2=80=99d love to hear what sparked your interest in computer
+vision. Hit reply and let me know!
+
+---------------------
+To make sure you keep getting these emails, please add
+adrian@pyimagesearch.com to your address book or whitelist us. Want out of
+the loop? <a href=3D"http://t.dripemail2.com/c/eyJhY2NvdW50X2lkIjoiNDc2ODQy=
+OSIsImRlbGl2ZXJ5X2lkIjoiNTYwNDI4MDM3NyIsInVybCI6Imh0dHBzOi8vd3d3LmdldGRyaXA=
+uY29tL3N1YnNjcmliZXJzL2sxdGZpNXhjeG5jcnBzcHBrZW9wL3Vuc3Vic2NyaWJlP2Q9amZpc2=
+5renBqem85ZjNlc29wdnFcdTAwMjZleGNsdWRlX2NsaWNrPTFcdTAwMjZzdWJzY3JpcHRpb249O=
+DA3MjU2OTU0XHUwMDI2X19zPWsxdGZpNXhjeG5jcnBzcHBrZW9wIn0">Unsubscribe</a>.
+Our postal address: PO Box 17598 #17900, Baltimore, MD 21297-1598
+
+
+--98750950a68488876c2dc4245916c4d44f3f6bcb2f108670085eb7ba48e9
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"box-sizing: border-bo=
+x; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif=
+; font-size: 14px; line-height: 1.5">
+<head>
+<meta name=3D"viewport" content=3D"width=3Ddevice-width">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+
+</head>
+<body style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: none; =
+background-color: #ffffff; box-sizing: border-box; font-family: 'Helvetica =
+Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; height: =
+100%; line-height: 1.6; width: 100% !important" bgcolor=3D"#ffffff">
+<style type=3D"text/css">
+img {
+max-width: 100%; margin-bottom: 14px;
+}
+body {
+background-color: #ffffff; -ms-text-size-adjust: 100%; -webkit-text-size-ad=
+just: none; width: 100% !important; height: 100%; line-height: 1.6;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass {
+line-height: 100%;
+}
+img {
+-ms-interpolation-mode: bicubic;
+}
+a:visited {
+color: purple !important;
+}
+a:hover {
+color: #e2911a !important;
+}
+a:active {
+color: #0d3d62 !important;
+}
+.cta-button:hover {
+color: #ffffff; background-color: #B67A0D; text-decoration: none; border-co=
+lor: #B67A0D; border: 12px solid #B67A0D;
+}
+[owa] .cta-button:hover {
+color: #ffffff; background-color: #B67A0D; text-decoration: none; border-co=
+lor: #B67A0D; border: 12px solid #B67A0D;
+}
+[class=3D"cta-button"]:hover {
+color: #ffffff; background-color: #B67A0D; text-decoration: none; border-co=
+lor: #B67A0D; border: 12px solid #B67A0D;
+}
+.cta-button:visited {
+color: #ffffff; background-color: #B67A0D; text-decoration: none; border-co=
+lor: #B67A0D; border: 12px solid #B67A0D;
+}
+[owa] .cta-button:visited {
+color: #ffffff; background-color: #B67A0D; text-decoration: none; border-co=
+lor: #B67A0D; border: 12px solid #B67A0D;
+}
+[class=3D"cta-button"]:visited {
+color: #ffffff; background-color: #B67A0D; text-decoration: none; border-co=
+lor: #B67A0D; border: 12px solid #B67A0D;
+}
+.cta-button:active {
+color: #ffffff; background-color: #B67A0D; text-decoration: none; border-co=
+lor: #B67A0D; border: 12px solid #B67A0D;
+}
+[owa] .cta-button:active {
+color: #ffffff; background-color: #B67A0D; text-decoration: none; border-co=
+lor: #B67A0D; border: 12px solid #B67A0D;
+}
+[class=3D"cta-button"]:active {
+color: #ffffff; background-color: #B67A0D; text-decoration: none; border-co=
+lor: #B67A0D; border: 12px solid #B67A0D;
+}
+</style>
+<!--[if mso 16]>
+    <style type=3D"text/css">
+        a{
+            text-decoration:none !important;
+        }
+    </style>
+<![endif]-->
+
+<table class=3D"body-wrap" style=3D"background-color: #ffffff; box-sizing: =
+border-box; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, s=
+ans-serif; font-size: 14px; line-height: 1.5; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; width: 100%" bgcolor=3D"#ffffff">
+  <tr style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helv=
+etica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+    <td class=3D"container" style=3D"box-sizing: border-box; clear: both !i=
+mportant; display: block !important; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; marg=
+in: 0; max-width: 600px !important; overflow: visible; vertical-align: top"=
+ valign=3D"top">
+      <div class=3D"content" style=3D"box-sizing: border-box; display: bloc=
+k; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif=
+; font-size: 14px; line-height: 1.5; margin: 0; max-width: 600px; overflow:=
+ visible">
+        <table class=3D"main" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Hel=
+vetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; m=
+so-table-lspace: 0pt; mso-table-rspace: 0pt">
+          <tr style=3D"box-sizing: border-box; font-family: 'Helvetica Neue=
+', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height:=
+ 1.5">
+            <td class=3D"main-content" style=3D"box-sizing: border-box; col=
+or: #222222; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-seri=
+f; font-size: 14px; line-height: 1.5; padding: 25px; vertical-align: top" v=
+align=3D"top">
+              Hi,<br style=3D"box-sizing: border-box; font-family: 'Helveti=
+ca Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-=
+height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+Welcome to the 17-day computer vision and deep learning crash course. Catch=
+y name, right?=C2=A0<br style=3D"box-sizing: border-box; font-family: 'Helv=
+etica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; li=
+ne-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+Seriously, thank you for signing up =E2=80=94 you=E2=80=99ve taken the firs=
+t step towards mastering computer vision, OpenCV, and deep learning, which =
+is fantastic.<br style=3D"box-sizing: border-box; font-family: 'Helvetica N=
+eue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-heig=
+ht: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+As you might have already determined =E2=80=94 you strike me as a pretty sm=
+art person =E2=80=94 this crash course is 17 days long. Each day for 17 day=
+s (Monday-Friday), you=E2=80=99ll receive an email with a new lesson based =
+on the tutorials I=E2=80=99ve written on my blog, PyImageSearch, over the l=
+ast 5 years.=C2=A0<br style=3D"box-sizing: border-box; font-family: 'Helvet=
+ica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line=
+-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+<strong style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'He=
+lvetica', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold;=
+ line-height: 1.5">This course organizes those tutorials into a cohesive pr=
+ogram designed to get you working in computer vision and deep learning<em s=
+tyle=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvetica',=
+ Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5"> FAST.</e=
+m></strong><br style=3D"box-sizing: border-box; font-family: 'Helvetica Neu=
+e', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height=
+: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+You=E2=80=99ll learn a lot over the next 2.5 weeks, and you=E2=80=99re also=
+ going to get your hands dirty, digging into the code and building real com=
+puter vision projects. The thing is, computer vision and deep learning are =
+a lot of fun =E2=80=94 <em style=3D"box-sizing: border-box; font-family: 'H=
+elvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px;=
+ line-height: 1.5">when you approach them the right way.</em><br style=3D"b=
+ox-sizing: border-box; font-family: 'Helvetica Neue', 'Helvetica', Helvetic=
+a, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+In other words, this course is <em style=3D"box-sizing: border-box; font-fa=
+mily: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-siz=
+e: 14px; line-height: 1.5">not</em> about hours of monotonous study or doin=
+g boring, tedious homework. <strong style=3D"box-sizing: border-box; font-f=
+amily: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-si=
+ze: 14px; font-weight: bold; line-height: 1.5">It=E2=80=99s about getting h=
+ands-on with CV and DL</strong>=C2=A0and <strong style=3D"box-sizing: borde=
+r-box; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-s=
+erif; font-size: 14px; font-weight: bold; line-height: 1.5">using them to s=
+olve real-world problems.</strong> You get a practical education <em style=
+=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvetica', Hel=
+vetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">and</em> you =
+get to have fun along the way.<br style=3D"box-sizing: border-box; font-fam=
+ily: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size=
+: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+As proof of this, today, <a href=3D"http://t.dripemail2.com/c/eyJhY2NvdW50X=
+2lkIjoiNDc2ODQyOSIsImRlbGl2ZXJ5X2lkIjoiNTYwNDI4MDM3NyIsInVybCI6Imh0dHBzOi8v=
+d3d3LnB5aW1hZ2VzZWFyY2guY29tLzIwMTgvMDIvMjYvZmFjZS1kZXRlY3Rpb24td2l0aC1vcGV=
+uY3YtYW5kLWRlZXAtbGVhcm5pbmcvP19fcz1rMXRmaTV4Y3huY3Jwc3Bwa2VvcCJ9" style=3D=
+"box-sizing: border-box; color: #4477bd; font-family: 'Helvetica Neue', 'He=
+lvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; =
+text-decoration: underline"><span style=3D"box-sizing: border-box; font-fam=
+ily: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size=
+: 14px; line-height: 1.5">you=E2=80=99ll get a close-up look at the "hidden=
+" deep learning-based face detector</span></a> that most people don't know =
+is built right into OpenCV:<br style=3D"box-sizing: border-box; font-family=
+: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 1=
+4px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+<a href=3D"http://t.dripemail2.com/c/eyJhY2NvdW50X2lkIjoiNDc2ODQyOSIsImRlbG=
+l2ZXJ5X2lkIjoiNTYwNDI4MDM3NyIsInVybCI6Imh0dHBzOi8vd3d3LnB5aW1hZ2VzZWFyY2guY=
+29tLzIwMTgvMDIvMjYvZmFjZS1kZXRlY3Rpb24td2l0aC1vcGVuY3YtYW5kLWRlZXAtbGVhcm5p=
+bmcvP19fcz1rMXRmaTV4Y3huY3Jwc3Bwa2VvcCJ9" style=3D"box-sizing: border-box; =
+color: #4477bd; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Aria=
+l, sans-serif; font-size: 14px; line-height: 1.5; text-decoration: underlin=
+e"><span style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'H=
+elvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5"=
+><img alt=3D"Image" src=3D"https://getdrip.s3.amazonaws.com/uploads/image_u=
+pload/image/228660/64eadc7f-771a-4bce-8be6-ce21f413b825.gif" style=3D"-ms-i=
+nterpolation-mode: bicubic; box-sizing: border-box; font-family: 'Helvetica=
+ Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; height:=
+ 211px; line-height: 1.5; margin-bottom: 14px; margin-top: 14px; max-width:=
+ 100%; width: 350px"></span></a><br style=3D"box-sizing: border-box; font-f=
+amily: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-si=
+ze: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+We=E2=80=99re starting here for a few reasons:
+<ol style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; l=
+ine-height: 1.5; list-style-type: decimal; margin-bottom: 14px; margin-left=
+: 20px; margin-right: 0; padding-left: 0; padding-right: 0">
+	<li style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helve=
+tica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; lis=
+t-style-type: decimal; margin-left: 0; margin-right: 0; padding-left: 0; pa=
+dding-right: 0">Come on. Discovering hidden stuff is just plain COOL. You=
+=E2=80=99re going to know something that a lot of CV/DL practitioners=C2=A0=
+don=E2=80=99t, which is fun.</li>
+	<li style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helve=
+tica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; lis=
+t-style-type: decimal; margin-left: 0; margin-right: 0; padding-left: 0; pa=
+dding-right: 0">You can use face detection in images and video, which makes=
+ it seriously useful.=C2=A0</li>
+	<li style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helve=
+tica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; lis=
+t-style-type: decimal; margin-left: 0; margin-right: 0; padding-left: 0; pa=
+dding-right: 0">The hidden face detector is a pre-trained model that=E2=80=
+=99s shipped with the OpenCV library, so you can dig in <em style=3D"box-si=
+zing: border-box; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Ar=
+ial, sans-serif; font-size: 14px; line-height: 1.5">even if you don=E2=80=
+=99t know a lot about OpenCV yet.</em>
+</li>
+</ol>
+To learn more about where you can find this little-known feature of OpenCV =
+and see exactly how to set it up and use it for highly accurate face detect=
+ion =E2=80=94 even in low light and poor resolution conditions =E2=80=94 <s=
+trong style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helv=
+etica', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; l=
+ine-height: 1.5"><a href=3D"http://t.dripemail2.com/c/eyJhY2NvdW50X2lkIjoiN=
+Dc2ODQyOSIsImRlbGl2ZXJ5X2lkIjoiNTYwNDI4MDM3NyIsInVybCI6Imh0dHBzOi8vd3d3LnB5=
+aW1hZ2VzZWFyY2guY29tLzIwMTgvMDIvMjYvZmFjZS1kZXRlY3Rpb24td2l0aC1vcGVuY3YtYW5=
+kLWRlZXAtbGVhcm5pbmcvP19fcz1rMXRmaTV4Y3huY3Jwc3Bwa2VvcCJ9" style=3D"box-siz=
+ing: border-box; color: #4477bd; font-family: 'Helvetica Neue', 'Helvetica'=
+, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; text-dec=
+oration: underline"><span style=3D"box-sizing: border-box; font-family: 'He=
+lvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; =
+line-height: 1.5">head on over to today=E2=80=99s lesson.</span></a></stron=
+g><br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helv=
+etica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+Most lessons will take you about 10-20 minutes to complete =E2=80=94 and th=
+ey=E2=80=99re all designed to give you the practical skills you need to use=
+ a particular computer vision or deep learning technique with confidence. T=
+his can translate directly into better job opportunities, higher salaries, =
+and exciting opportunities to develop all kinds of amazing tools.=C2=A0<br =
+style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvetica'=
+, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+By setting aside the 10-20 minutes to complete each day=E2=80=99s lesson, <=
+em style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helveti=
+ca', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">you=
+=E2=80=99re truly investing in your future.</em>=C2=A0<br style=3D"box-sizi=
+ng: border-box; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Aria=
+l, sans-serif; font-size: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+Remember the first time you thought about getting into computer programming=
+? I bet it wasn't because someone showed you a screenful of code...<br styl=
+e=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvetica', He=
+lvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+<strong style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'He=
+lvetica', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold;=
+ line-height: 1.5">Instead, your motivation was likely more practical, real=
+-world, and tangible.</strong><br style=3D"box-sizing: border-box; font-fam=
+ily: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size=
+: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+Maybe you wanted to understand how websites were created so you could build=
+ your own. Perhaps you read an article about the creator of the Flappy Bird=
+ game was making $50,000/day off his app and you wanted to do the same. Or =
+maybe you started coding because you saw how computer vision is helping med=
+ical professionals diagnose health problems earlier than ever =E2=80=94 or =
+something else entirely, that made you want to be a part of that world.<br =
+style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvetica'=
+, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+That=E2=80=99s what this crash course is for. To help you get back the <em =
+style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvetica'=
+, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">exciteme=
+nt</em> that goes along with learning new skills and <strong style=3D"box-s=
+izing: border-box; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, A=
+rial, sans-serif; font-size: 14px; font-weight: bold; line-height: 1.5">usi=
+ng those skills to create real-world solutions.</strong><br style=3D"box-si=
+zing: border-box; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Ar=
+ial, sans-serif; font-size: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+I=E2=80=99m excited that you=E2=80=99re here. <a href=3D"http://t.dripemail=
+2.com/c/eyJhY2NvdW50X2lkIjoiNDc2ODQyOSIsImRlbGl2ZXJ5X2lkIjoiNTYwNDI4MDM3NyI=
+sInVybCI6Imh0dHBzOi8vd3d3LnB5aW1hZ2VzZWFyY2guY29tLzIwMTgvMDIvMjYvZmFjZS1kZX=
+RlY3Rpb24td2l0aC1vcGVuY3YtYW5kLWRlZXAtbGVhcm5pbmcvP19fcz1rMXRmaTV4Y3huY3Jwc=
+3Bwa2VvcCJ9" style=3D"box-sizing: border-box; color: #4477bd; font-family: =
+'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14p=
+x; line-height: 1.5; text-decoration: underline"><span style=3D"box-sizing:=
+ border-box; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, =
+sans-serif; font-size: 14px; line-height: 1.5"><strong style=3D"box-sizing:=
+ border-box; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, =
+sans-serif; font-size: 14px; font-weight: bold; line-height: 1.5">Let=E2=80=
+=99s get started!</strong></span></a><br style=3D"box-sizing: border-box; f=
+ont-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; fo=
+nt-size: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+I'll be back tomorrow with the second lesson in the crash course.<br style=
+=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvetica', Hel=
+vetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+<em style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">Adri=
+an Rosebrock<br style=3D"box-sizing: border-box; font-family: 'Helvetica Ne=
+ue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-heigh=
+t: 1.5">
+Chief PyImageSearcher</em><br style=3D"box-sizing: border-box; font-family:=
+ 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14=
+px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+P.S. I=E2=80=99d love to hear what sparked your interest in computer vision=
+. Hit reply and let me know!
+            </td>
+          </tr>
+        </table>
+      </div>
+=20=20=20=20=20=20
+      <div class=3D"content" style=3D"box-sizing: border-box; display: bloc=
+k; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif=
+; font-size: 14px; line-height: 1.5; margin: 0; max-width: 600px; overflow:=
+ visible">
+        <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"=
+box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvetica', Helveti=
+ca, Arial, sans-serif; font-size: 14px; line-height: 1.5; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt">
+          <tr style=3D"box-sizing: border-box; font-family: 'Helvetica Neue=
+', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height:=
+ 1.5">
+            <td class=3D"footer-content" style=3D"border-top-color: #d0d0d0=
+; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; c=
+lear: both; color: #777; font-family: 'Helvetica Neue', 'Helvetica', 'Arial=
+', sans-serif; font-size: 14px; line-height: 1.5; padding: 25px; vertical-a=
+lign: top; width: 100%" valign=3D"top">
+              To make sure you keep getting these emails, please add adrian=
+@pyimagesearch.com to your address book or whitelist us. Want out of the lo=
+op? <a href=3D"http://t.dripemail2.com/c/eyJhY2NvdW50X2lkIjoiNDc2ODQyOSIsIm=
+RlbGl2ZXJ5X2lkIjoiNTYwNDI4MDM3NyIsInVybCI6Imh0dHBzOi8vd3d3LmdldGRyaXAuY29tL=
+3N1YnNjcmliZXJzL2sxdGZpNXhjeG5jcnBzcHBrZW9wL3Vuc3Vic2NyaWJlP2Q9amZpc25renBq=
+em85ZjNlc29wdnFcdTAwMjZleGNsdWRlX2NsaWNrPTFcdTAwMjZzdWJzY3JpcHRpb249ODA3MjU=
+2OTU0XHUwMDI2X19zPWsxdGZpNXhjeG5jcnBzcHBrZW9wIn0">Unsubscribe</a>.<br style=
+=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvetica', Hel=
+vetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+<br style=3D"box-sizing: border-box; font-family: 'Helvetica Neue', 'Helvet=
+ica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5">
+Our postal address: PO Box 17598 #17900, Baltimore, MD 21297-1598
+            </td>
+          </tr>
+        </table>
+      </div>
+=20=20=20=20=20=20
+    </td>
+  </tr>
+</table>
+
+<img src=3D"http://o.dripemail2.com/wf/open?upn=3DQ0Y0L54uOhrrHtFzGFlMm6icA=
+1Wn-2Fvoi1La-2F5m4aDCghA0flVDlrT9TPE3iuEWDHj9BVAYniddULD7jGKcd3E7vByi8f54X3=
+n5bOpwFIl79G3uP2r6hcYPlX3ZKp8YYk9xeUlb-2ForKQxwclYGYsdNfy6o6OeTlXFvuyWsALn8=
+EVWAd5hIx-2Fxp-2F-2BVH-2BTGo2RyU7PJZoX-2FKsgdatUlgzk7b-2Bl8-2BOPFaqzaAY-2FD=
+RooJ51Ba-2F6YglhRF5p5tlYVjic7KjuKUPtLUmWmH9gqbrsu1mmJSClQTwgvLdV8i91qpFk1RH=
+Pv414ItrjAJiWBNTc-2BuNKFZ-2BpmcQXRcq2H9AVh8Fw9skp5wY4OI-2FMbwqwmzWB1dbAKoOL=
+azCCf9FdqfESuqnR6dD5YKN66d6jVY8YRvbA2mAdfiIDWMmeyIgJ9fUO2kCjenLdsU4tm9CJJxH=
+gDJGvGwfjP-2FTuLAhytH6ylhqiqVk6tL7pcVOym19nLekpuEq20ZezcnZuOt-2BoKWjouo" al=
+t=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !important=
+;width:1px !important;border-width:0 !important;margin-top:0 !important;mar=
+gin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;=
+padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !impor=
+tant;padding-left:0 !important;"/>
+</body>
+</html>
+
+
+--98750950a68488876c2dc4245916c4d44f3f6bcb2f108670085eb7ba48e9--
